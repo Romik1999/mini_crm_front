@@ -1,13 +1,10 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { RouterProvider } from 'react-router-dom';
+import Router from './routes';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="mini_crm_front" />
-    </div>
-  );
+  return <RouterProvider router={Router} />;
 }
 
 export default App;
